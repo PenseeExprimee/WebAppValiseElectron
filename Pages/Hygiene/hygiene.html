@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="../../CSS/compteur.css">
+    <title>Ma valise: Hauts</title>
+</head>
+<body>
+    <section>
+        <div class="inventaire-titre">
+            <a href="../../Pages/Menu/menu.html"><i class="fa-solid fa-home"></i></a>
+            <p>Hygiène</p>
+        </div>
+    </section>
+    <section class = "middle-page">
+        <div class="inventaire-grid-hygiene">
+            <div class="grid-item">
+                <img src="../../images/hygiene/makeup.png" alt="Image de makeup">
+                <p>Makeup</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-makeup" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-makeup', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-makeup', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/nail-polish.png" alt="Image d'un vernis">
+                <p>Vernis</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-vernis" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-vernis', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-vernis', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/pads.jpg" alt="Image de serviettes hygièniques">
+                <p>Serviettes hygièniques</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-serviettes-hyg" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-serviettes-hyg', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-serviettes-hyg', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/perfume.png" alt="Image de parfum">
+                <p>Parfum</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-parfum" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-parfum', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-parfum', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/razor.png" alt="Image d'instrument d epilation">
+                <p>Epilation</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-epilation" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-epilation', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-epilation', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/serum.png" alt="Image de sérums">
+                <p>Sérums</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-serums" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-serums', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-serums', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/shower-gel.png" alt="Image de gel douche">
+                <p>Gel douche</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-gel-douche" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-gel-douche', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-gel-douche', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/slippers.png" alt="Image de chaussons">
+                <p>Chaussons</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-chaussons" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-chaussons', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-chaussons', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/sun-cream.png" alt="Image de crème hydratante">
+                <p>Crème hydratante</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-creme-hydratante" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-creme-hydratante', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-creme-hydratante', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/sweat.png" alt="Image de deodorant">
+                <p>Déodorant</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-deodorant" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-deodorant', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-deodorant', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/toothbrush.png" alt="Image de brosse à dent">
+                <p>Brosse à dent</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-brosse-a-dent" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-brosse-a-dent', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-brosse-a-dent', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/hygiene/toothpaste.png" alt="Image de dentifrice">
+                <p>Dentififrice</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-dentifrice" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-dentifrice', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-dentifrice', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+</body>
+<script src="../../compteur.js" defer></script>
+</html>

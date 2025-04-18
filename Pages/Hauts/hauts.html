@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="../../CSS/compteur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ma valise: Hauts</title>
+</head>
+<body>
+    <section>
+        <div class="inventaire-titre">
+            <a href="../../Pages/Menu/menu.html"><i class="fa-solid fa-home"></i></a>
+            <p>Hauts</p>
+        </div>
+    </section>
+    <section class = "middle-page">
+        <div class="inventaire-grid">
+            <div class="grid-item">
+                <img src="../../images/tops/tshirt.png" alt="Image d'un tshirt">
+                <p> T-shirt </p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-tshirt" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-tshirt', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-tshirt', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/tops/longSleeve.png" alt="Image d'un tshirt manche longue">
+                <p>Manche longue</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-manche-longue" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-manche-longue', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-manche-longue', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/tops/souscorps.png" alt="Image d'un sous corps">
+                <p>Sous corps</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-sous-corps" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-sous-corps', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-sous-corps', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/tops/chemises.png" alt="Image d'une chemise">
+                <p>Chemises</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-chemise" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-chemise', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-chemise', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/tops/pull.png" alt="Image d'un pull">
+                <p>Pull, Gilets</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-pull" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-pull', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-pull', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/tops/jacket.png" alt="Image d'une veste">
+                <p>Vestes</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-vestes" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-vestes', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-vestes', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="../../compteur.js" defer></script>
+</html>

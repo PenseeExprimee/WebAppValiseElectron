@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="../../CSS/compteur.css">
+    <title>Ma valise: Hauts</title>
+</head>
+<body>
+    <section>
+        <div class="inventaire-titre">
+            <a href="../../Pages/Menu/menu.html"><i class="fa-solid fa-home"></i></a>
+            <p>Pantalons</p>
+        </div>
+    </section>
+    <section class = "middle-page">
+        <div class="inventaire-grid">
+            <div class="grid-item" data-link ="../Hauts/hauts.html">
+                <img src="../../images/pantalons/jeans.png" alt="Image d'un pantalons">
+                <p>Pantalon</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-pantalons" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-pantalons', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-pantalons', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item" data-link ="../Pantalons/pantalons.html">
+                <img src="../../images/pantalons/shorts.png" alt="Image d'un short">
+                <p>Shorts</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-shorts" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-shorts', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-shorts', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="../../compteur.js" defer></script>
+</html>

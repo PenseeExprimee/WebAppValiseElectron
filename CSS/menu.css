@@ -1,0 +1,120 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+/* Conteneur principal */
+.inner {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+.top-page img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Titres des pages */
+.inventaire-titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aed8f7;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inventaire-titre a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.inventaire-titre i {
+    font-size: 30px;
+}
+
+/* Grilles d'inventaire */
+.inventaire-grid, .inventaire-grid-hygiene {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #ecf0f1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item {
+    background-color: #ace5f5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    background-color: #2980b9;
+}
+
+.grid-item img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Bouton nouveau voyage */
+.nouveau-voyage-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.nouveau-voyage-button {
+    background-color: hsl(209, 70%, 75%);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+.nouveau-voyage-button:hover {
+    background-color: #d35400;
+}

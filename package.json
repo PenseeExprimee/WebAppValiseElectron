@@ -1,0 +1,22 @@
+{
+  "name": "webappvaliseelectron",
+  "version": "1.0.0",
+  "description": "Transforming my website App valise into a desktop app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "WebAppValiseElectron"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Laura",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "^35.1.5"
+  }
+}
