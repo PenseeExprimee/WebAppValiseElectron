@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="../../CSS/compteur.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ma valise: Hauts</title>
+</head>
+<body>
+    <section>
+        <div class="inventaire-titre">
+            <a href="../../Pages/Menu/menu.html"><i class="fa-solid fa-home"></i></a>
+            <p>Accessoires</p>
+        </div>
+    </section>
+    <section class = "middle-page">
+        <div class="inventaire-grid">
+            <div class="grid-item">
+                <img src="../../images/accessoires/collier.jpg" alt="Image d'un tshirt">
+                <p>Colliers</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-collier" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-collier', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-collier', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/accessoires/boucles-doreilles.jpg" alt="Image d'un tshirt manche longue">
+                <p>Boucles d'oreilles</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-earrings" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-earrings', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-earrings', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/accessoires/bracelet.jpg" alt="Image d'un sous corps">
+                <p>Bracelets</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-bracelet" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-bracelet', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-bracelet', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/accessoires/bague.jpg" alt="Image d'une chemise">
+                <p>Bagues</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-rings" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-rings', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-rings', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../../images/accessoires/montre.jpg" alt="Image d'un pull">
+                <p>Montres</p>
+                <div class = "compteur-section">
+                    <p>🧳 </p>
+                    <p id="compteur-montres" onclick = "activerEdition(this)">0</p>
+                    <div class="action-buttons">
+                        <button class="plus" onclick="compteurUpdate('compteur-montres', 1)">+</button>
+                        <button class="moins" onclick="compteurUpdate('compteur-montres', -1)">-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<script src="../../compteur.js" defer></script>
+</html>

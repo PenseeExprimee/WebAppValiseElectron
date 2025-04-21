@@ -40,10 +40,11 @@ h2 {
 
 /* Titres des pages */
 .inventaire-titre {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #aed8f7;
+    background-color: #b9a182; 
     color: white;
     padding: 20px;
     font-size: 30px;
@@ -58,6 +59,9 @@ h2 {
 }
 
 .inventaire-titre i {
+    position: absolute;
+    left: 50px; /* Adjust as needed */
+    bottom: 30px;
     font-size: 30px;
 }
 
@@ -73,7 +77,7 @@ h2 {
 }
 
 .grid-item {
-    background-color: #ace5f5;
+    background-color: #e5d6c2; /*#DEB887; #e5d6c2*/
     color: white;
     display: flex;
     flex-direction: column;
@@ -87,11 +91,11 @@ h2 {
 }
 
 .grid-item:hover {
-    background-color: #2980b9;
+    background-color: #F3E2A9;
 }
 
 .grid-item img {
-    max-width: 50px;
+    max-width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -105,7 +109,7 @@ h2 {
 }
 
 .nouveau-voyage-button {
-    background-color: hsl(209, 70%, 75%);
+    background-color: hsl(36, 59%, 46%);
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -116,5 +120,5 @@ h2 {
 }
 
 .nouveau-voyage-button:hover {
-    background-color: #d35400;
+    background-color: #F3E2A9;
 }
